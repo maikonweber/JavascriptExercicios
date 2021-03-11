@@ -1,0 +1,41 @@
+<script>
+
+function powerTwo(number) {
+
+    if (number < 1) {
+        return false;
+
+    }
+
+
+    let divNumber = number;
+    while (divNumber !== 1) {
+        if (divNumber % 2 !== 0) {
+
+
+            return false
+        }
+
+        divNumber /= 2;
+    }
+
+    return true;
+}
+
+
+
+console.log(powerTwo(8));
+
+
+function powerTwoBit(number) {
+    if (number < 1) {
+        return false;
+    }
+
+    return (number & (number - 1)) == 0;
+
+}
+
+console.log(powerTwoBit(0001))
+
+</script>

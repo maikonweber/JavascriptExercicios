@@ -1,0 +1,23 @@
+<script>
+
+// https://pt.wikipedia.org/wiki/Tri%C3%A2ngulo_de_Pascal
+
+function pascalTringle(lineNumber) {
+    const currentLine = [1];
+
+    const currentLineSize = lineNumber + 1;
+
+
+    for ( let numIndex = 1 ; numIndex < currentLineSize ; numIndex += 1) {
+
+        currentLine[numIndex] = (currentLine[numIndex - 1] * (lineNumber - numIndex + 1 )) / numIndex;
+    }
+
+    return currentLine;
+
+}
+
+console.log(pascalTringle(4));
+
+
+</script>

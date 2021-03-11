@@ -1,0 +1,39 @@
+<script>
+
+function squareRoot(number , tolerance = 0) {
+
+    if (number < 0) {
+
+        throw new Error("O metodo suporta apenas números positivos inteiros ");
+
+
+    }
+
+    if (number === 0) {
+
+        return 0;
+    }
+
+    let root = 1 ;
+
+
+    const requiredDelta = 1 / (10 ** tolerance);
+
+    while (Math.abs(number - (root ** 2)) > requiredDelta ) {
+
+
+
+        root -= ((root ** 2) - number ) / ( 2 * root );
+
+    }
+
+    return Math.round(root * ( 10 ** tolerance)) / (10 ** tolerance);
+
+}
+
+console.log(squareRoot(9, 1))
+
+
+
+
+</script>

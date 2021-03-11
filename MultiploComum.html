@@ -1,0 +1,19 @@
+<script>
+
+function euclidiaAl (origilA, originB) {
+
+const a = Math.abs(origilA);
+
+const b = Math.abs(originB);
+
+return ( b === 0 ) ? a : euclidiaAl(b, a % b);
+}
+
+
+function MultComun(a, b) {
+
+    return (( a === 0 ) || (b === 0)) ? 0 : Math.abs( a * b) / euclidiaAl(a , b);
+}
+
+console.log(MultComun(9, 7));
+</script>

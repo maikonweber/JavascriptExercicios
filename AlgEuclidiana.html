@@ -1,0 +1,15 @@
+<script>
+
+function euclidiaAl (origilA, originB) {
+
+    const a = Math.abs(origilA);
+
+    const b = Math.abs(originB);
+
+    return ( b === 0 ) ? a : euclidiaAl(b, a % b);
+}
+
+console.log(euclidiaAl(8, 12));
+
+
+</script>

@@ -1,0 +1,47 @@
+<script>
+
+   function checkAnagram(str1, str2)  {
+        // Checar se entradas são Strings 
+
+        if (typeof str1 !== 'string' || typeof str2 !== "string") {
+            return "Não é uma String(s)"
+        }
+
+        // Se as duas strings não tiverem o mesmo tamanho não são anagramas.
+
+        if (str1.length !== str2.length) {
+            return "Não é um anagrama"
+
+
+        }
+
+        // Usa hashmap para contar os caracteres da str1
+
+        
+        const str1CharCount = new Map()
+
+        for ( let i = 0; i < str1.length; i++) {
+            let previousCount = 0
+
+            if (str1CharCount.has(str1[1])) {
+                previousCount = str1CharCount.get(str1[i])
+            }
+
+            str1CharCount.set(str1[i], previousCount + 1)
+
+        }
+
+        // Verifica se todas estradas do Hashmap são Zero
+
+        for  (const key in str1CharCount) {
+            if (str1CharCoun[key] !== 0) {return "Não e Anagrama"}
+        }
+
+
+        return "Anagrama"
+
+    }
+
+    const result = checkAnagram("banana", "macaco")
+    console.log(result)
+</script>

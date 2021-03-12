@@ -1,0 +1,22 @@
+<script>
+
+function ReverserString (string) {
+    if (typeof string !== "string" ) {
+        throw new TypeError (" Valor não é uma String")
+
+    }
+    let reverserString = ""
+    let index
+
+    for (index = string.length - 1; index >= 0; index--) {
+        reverserString += string[index]
+
+    }
+
+    return reverserString
+}
+
+const strings = ReverserString("Maikon")
+console.log(strings)
+
+</script>

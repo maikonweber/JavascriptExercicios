@@ -1,0 +1,32 @@
+<script>
+
+    // 
+
+const checkPalindrome = (str) => {
+
+    // Verifica a entrada é uma string
+
+    if (typeof str !== "string") {
+
+        return "Não é uma String"
+    }
+
+    if (str.length === 0) {
+
+        return "String Vazia"
+
+    }
+
+    // Reverse só funciona como array, portando converta string para um array.
+    // Converta Novamente para String
+    // Retorna Palindromo se string invertida for igual à string de entrada.
+
+    const reveserd = [...str].reverse().join('')
+    return str === reversed ? "Palindrome" : "Não é Palindrome"
+
+
+}
+
+
+
+</script>

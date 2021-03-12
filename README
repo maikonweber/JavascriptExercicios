@@ -9,3 +9,6 @@
 - > Pascal's Triangle = m triângulo numérico infinito formado por números binomiais {\displaystyle {\begin{matrix}{n \choose k}\end{matrix}}}{\displaystyle {\begin{matrix}{n \choose k}\end{matrix}}}, onde {\displaystyle n}n representa o número da linha e {\displaystyle k}k representa o número da coluna, iniciando a contagem a partir do zero.[1] 
 - > SquareRoot =  Um algoritmo para encontrar raízes é um método numérico para encontrar um valor de x tal que f(x) = 0, para uma dada função f. Tal x é chamado de raiz da função f
 - > NumberComplex - Os números complexos podem ser representados de três formas: a forma algébrica (z = a + bi), composta por uma parte real a e uma parte imaginária b; a forma geométrica, representada no plano complexo conhecido também como plano de Argand-Gauss; e a sua forma trigonométrica, conhecida também como forma polar.
+
+
+- > Check Anagrama - Verifica se duas strings são anagramas.
